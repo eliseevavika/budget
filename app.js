@@ -228,14 +228,10 @@ var UIController = (function(){
             fieldsArr.forEach(function(current, index, array){
                 current.value = "";
             });
-            
-    
         },
         
         displayPercentages: function(percentages){
             var fields = document.querySelectorAll(DOMstrings.expensesPercentageLabel);
-            
-           
             
             nodeListForEach(fields, function(current, index){
                 if(percentages[index] > 0){
